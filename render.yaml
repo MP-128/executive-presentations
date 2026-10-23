@@ -1,0 +1,21 @@
+# One service: Express API + in-process job worker + built React app.
+# The worker and the web server share the SQLite DB and output files on the disk,
+# and a Render disk attaches to exactly one service, so they cannot be split.
+services:
+  - type: web
+    name: executive-presentations
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    plan: 1c-2g # LibreOffice rendering needs headroom; 0.5c-512mb is cheaper but may run out of memory
+    region: oregon
+    healthCheckPath: /
+    autoDeployTrigger: commit
+    disk:
+      name: app-data
+      mountPath: /var/data # matches DATA_DIR: app.db, uploads/, jobs/
+      sizeGB: 5
+    envVars:
+      - key: ANTHROPIC_API_KEY
+        sync: false # prompted for in the dashboard; never committed
+      - key: DAILY_JOB_LIMIT
+        value: "50"

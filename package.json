@@ -1,0 +1,47 @@
+{
+  "name": "executive-presentations-app",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "tsx watch server/index.ts",
+    "start": "tsx server/index.ts",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit && tsc --noEmit -p client",
+    "vendor-skill": "./scripts/vendor-skill.sh",
+    "dev:client": "vite --config client/vite.config.ts",
+    "build": "vite build --config client/vite.config.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^1.1.0",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/icons-material": "^9.5.0",
+    "@mui/material": "^9.5.0",
+    "@resvg/resvg-js": "^2.6.2",
+    "better-sqlite3": "^13.0.3",
+    "express": "^5.3.0",
+    "image-size": "^1.2.1",
+    "jszip": "^3.10.2",
+    "pptxgenjs": "^4.0.1",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^9.6.0",
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.6.5",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@types/supertest": "^7.2.1",
+    "@vitejs/plugin-react": "^6.1.2",
+    "supertest": "^7.3.1",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.4",
+    "vitest": "^5.0.4"
+  }
+}

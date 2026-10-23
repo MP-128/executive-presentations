@@ -1,0 +1,8 @@
+{
+  "name": "executive-presentations-scripts",
+  "private": true,
+  "description": "Node dependencies for the executive-presentations Claude Code skill",
+  "dependencies": {
+    "pptxgenjs": "^4.0.1"
+  }
+}

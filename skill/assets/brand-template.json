@@ -1,0 +1,37 @@
+{
+  "company": "<Company name>",
+  "website": "https://<domain>",
+  "researched": "<YYYY-MM-DD>",
+  "status": "official | inferred | provisional",
+  "statusNote": "<what was found / not found, e.g. 'No public brand guidelines; palette inferred from site CSS'>",
+  "sources": ["<URL — what it provided>"],
+  "colors": {
+    "dark":        { "hex": "1F2937", "role": "cover/divider ground", "provenance": "official | site-declared | inferred-site-css | inferred-site-asset | provisional", "evidence": "<token / file>" },
+    "ink":         { "hex": "1F2937", "role": "headlines", "provenance": "", "evidence": "" },
+    "body":        { "hex": "374151", "role": "body text", "provenance": "", "evidence": "" },
+    "muted":       { "hex": "6B7280", "role": "sources, axis labels", "provenance": "", "evidence": "" },
+    "rule":        { "hex": "E5E7EB", "role": "hairlines", "provenance": "", "evidence": "" },
+    "background":  { "hex": "FFFFFF", "role": "content ground", "provenance": "", "evidence": "" },
+    "tint":        { "hex": "F3F4F6", "role": "panels, table headers", "provenance": "", "evidence": "" },
+    "accent":      { "hex": "2563EB", "role": "focus series, kicker, highlight", "provenance": "", "evidence": "" },
+    "accent2":     { "hex": "94A3B8", "role": "secondary series", "provenance": "", "evidence": "" },
+    "onDark":      { "hex": "FFFFFF", "role": "text on dark", "provenance": "", "evidence": "" },
+    "onDarkMuted": { "hex": "B8C0D9", "role": "secondary text on dark", "provenance": "", "evidence": "" },
+    "positive":    { "hex": "2E7D5B", "role": "status only", "provenance": "", "evidence": "" },
+    "warning":     { "hex": "B26B00", "role": "risk/pain only", "provenance": "", "evidence": "" },
+    "negative":    { "hex": "B42318", "role": "high risk/decline only", "provenance": "", "evidence": "" }
+  },
+  "dataSeries": ["2563EB", "1F2937", "94A3B8", "6B7280"],
+  "fonts": {
+    "heading": { "brand": "<brand font or null>", "use": "Arial", "note": "<why substituted>" },
+    "body":    { "brand": "<brand font or null>", "use": "Arial" }
+  },
+  "logo": {
+    "path": "<relative-to-this-json or absolute path; omit block if no logo>",
+    "variant": "white | colour",
+    "source": "<official URL or 'supplied by user'>",
+    "aspect": 3.0,
+    "heightIn": 0.4,
+    "use": "cover only; <why appropriate>"
+  }
+}

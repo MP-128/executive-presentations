@@ -1,0 +1,24 @@
+{
+  "company": "Provisional (brand not verified)",
+  "status": "provisional",
+  "statusNote": "Restrained neutral palette used when the target company's branding cannot be verified. Replace once official guidelines or site colours are confirmed. Tell the user this is a placeholder.",
+  "sources": [],
+  "colors": {
+    "dark":        { "hex": "1E293B", "role": "cover/divider ground", "provenance": "provisional" },
+    "ink":         { "hex": "0F172A", "role": "headlines", "provenance": "provisional" },
+    "body":        { "hex": "334155", "role": "body text", "provenance": "provisional" },
+    "muted":       { "hex": "64748B", "role": "sources, axis labels", "provenance": "provisional" },
+    "rule":        { "hex": "E2E8F0", "role": "hairlines", "provenance": "provisional" },
+    "background":  { "hex": "FFFFFF", "role": "content ground", "provenance": "provisional" },
+    "tint":        { "hex": "F1F5F9", "role": "panels", "provenance": "provisional" },
+    "accent":      { "hex": "2F6690", "role": "focus series", "provenance": "provisional" },
+    "accent2":     { "hex": "94A3B8", "role": "secondary series", "provenance": "provisional" },
+    "onDark":      { "hex": "FFFFFF", "role": "text on dark", "provenance": "provisional" },
+    "onDarkMuted": { "hex": "CBD5E1", "role": "secondary text on dark", "provenance": "provisional" },
+    "positive":    { "hex": "2E7D5B", "role": "status only", "provenance": "provisional" },
+    "warning":     { "hex": "A15C00", "role": "risk/pain only", "provenance": "provisional" },
+    "negative":    { "hex": "B42318", "role": "high risk only", "provenance": "provisional" }
+  },
+  "dataSeries": ["2F6690", "1E293B", "94A3B8", "64748B"],
+  "fonts": { "heading": { "brand": null, "use": "Arial" }, "body": { "brand": null, "use": "Arial" } }
+}
