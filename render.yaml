@@ -6,7 +6,7 @@ services:
     name: executive-presentations
     runtime: docker
     dockerfilePath: ./Dockerfile
-    plan: 1c-2g # LibreOffice rendering needs headroom; 0.5c-512mb is cheaper but may run out of memory
+    plan: 0.5c-512mb # cheapest plan with a disk; move to 1c-2g if LibreOffice rendering runs out of memory
     region: oregon
     healthCheckPath: /
     autoDeployTrigger: commit
